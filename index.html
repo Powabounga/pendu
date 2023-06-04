@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Jeu du pendu</h1>
+      <div class="input-section">
+        <h2>Saisissez un mot :</h2>
+        <h3>Attention, vous n'avez le droit qu'à 6 tentatives !</h3>
+        <input type="text" id="mot" />
+        <button id="start-btn" onclick="addWord()">Commencer</button>
+      </div>
+      <div class="game-section">
+        <div class="life">
+          <h2>Tentatives restantes :</h2>
+          <h1 id="tentatives"></h1>
+        </div>
+        <div class="find">
+          <h2>Mot à trouver</h2>
+          <h1 id="hiddenWord">----------</h1>
+        </div>
+      </div>
+      <div class="letter">
+        <h2>Proposez une lettre :</h2>
+        <input type="text" name="" id="letterToFind" />
+        <button id="submit-btn" onclick="addLetter()">valider</button>
+        <h2>Lettre déjà proposée(s) :</h2>
+        <h2 id="stockLetter"></h2>
+      </div>
+      <div id="result-section">
+        <h2 id="win"></h2>
+        <h2 id="lose"></h2>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
